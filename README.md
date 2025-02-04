@@ -2,7 +2,7 @@
 Stuffs on the AI and deepseek
 ![image](https://github.com/user-attachments/assets/64a600bb-89d1-4165-9237-b16b9cabae8d)
 
-**人生的意义是什么？是大自然演变的一环而已，何必纠结。是碗中餐、身边人和眼中景。加油做自己喜欢的事吧，想清楚每天要做的事，实现它们！**
+**人生的意义是什么？是大自然演变的一环而已，何必纠结。是碗中餐、身边人和眼中景。加油做自己喜欢的事吧，想清楚每天要做的事，实现它们！改变世界，从一点点开始！！**
 
 ## deepseek官方网址[deepseek.ai](https://www.deepseek.com/) and [deepseek chat](https://chat.deepseek.com/)
 License
