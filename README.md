@@ -2,14 +2,15 @@
 Stuffs on the AI and deepseek
 
 
-## deepseek官方网址及web使用链接：
-[deepseek.ai](https://www.deepseek.com/) and [deepseek chat](https://chat.deepseek.com/)
-
+## deepseek官方网址[deepseek.ai](https://www.deepseek.com/) and [deepseek chat](https://chat.deepseek.com/)
 License
 The model weights are licensed under the MIT License. DeepSeek-R1 series support commercial use, allow for any modifications and derivative works, including, but not limited to, distillation for training other LLMs. Please note that:
 The Qwen distilled models are derived from Qwen-2.5 series, which are originally licensed under Apache 2.0 License, and now finetuned with 800k samples curated with DeepSeek-R1.
 The Llama 8B distilled model is derived from Llama3.1-8B-Base and is originally licensed under llama3.1 license.
 The Llama 70B distilled model is derived from Llama3.3-70B-Instruct and is originally licensed under llama3.3 license.
+
+![image](https://github.com/user-attachments/assets/1ddfae73-5f84-4bda-8a7f-a7467fabc037)
+
 
 ## deepseek本地部署
 ### 使用ollama环境：
@@ -43,6 +44,7 @@ DeepSeek-R1-Distill-Qwen-14B
 ```
 ollama run deepseek-r1:14b
 ```
+MyLaptop@MacBook air (8GB) can run this version.
 DeepSeek-R1-Distill-Qwen-32B
 ```
 ollama run deepseek-r1:32b
