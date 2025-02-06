@@ -59,6 +59,58 @@ DeepSeek-R1-Distill-Llama-70B
 ```
 ollama run deepseek-r1:70b
 ```
+
+####模型的优化性能
+
+1、创建或编辑配置文件：
+
+vim ~/.ollama/config
+
+2、添加配置信息（~/.ollama/config）：
+```
+{
+  "gpu_layers": 35,         // GPU层数，根据显卡性能调整
+  "cpu_threads": 6,         // CPU线程数，建议设为CPU核心数
+  "batch_size": 512,        // 批处理大小，影响内存使用
+  "context_size": 4096      // 上下文窗口大小，影响对话长度
+}
+```
+3、重启ollama服务生效
+```
+ollama stop 
+ollama start
+ollama run deepseek-r1:7b
+```
+4、性能调优建议：
+
+如果电脑发烫/卡顿：减小 gpu_layers 和 batch_size
+如果内存不足：减小 batch_size
+如果需要更长对话：增加 context_size（会消耗更多内存）
+cpu_threads 建议设置为实际CPU核心数-2
+5、性能参考
+
+内存占用：~12-14GB
+首次加载：30-60秒
+对话延迟：1-3秒
+上下文窗口：4096 tokens
+
+#### 验证优化生效
+
+1、在模型对话界面输入一个较长的问题
+
+请给我详细解释一下量子计算的基本原理，要求回答内容超过500字
+
+2、查看CPU和内存使用
+
+top
+3、检查是否生效的判断标准：
+
+GPU使用率应该显著（如果有独立显卡）
+CPU线程数应该是配置的6个
+长文本响应时不会出现内存溢出
+对话上下文能保持4096个token左右
+
+
 ### 使用[cherry studio](https://cherry-studio.com/)
 
 
